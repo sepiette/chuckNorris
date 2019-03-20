@@ -14,9 +14,9 @@ import { NotificationInterceptor } from './blocks/interceptor/notification.inter
 import { ChuckNorrisSharedModule } from 'app/shared';
 import { ChuckNorrisCoreModule } from 'app/core';
 import { ChuckNorrisAppRoutingModule } from './app-routing.module';
-import { ChuckNorrisHomeModule } from './home/home.module';
+import { ChuckNorrisHomeModule } from './jhipster-home/home.module';
 import { ChuckNorrisAccountModule } from './account/account.module';
-import { ChuckNorrisEntityModule } from './entities/entity.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
@@ -34,8 +34,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         ChuckNorrisCoreModule,
         ChuckNorrisHomeModule,
         ChuckNorrisAccountModule,
-        // jhipster-needle-angular-add-module JHipster will add new module here
-        ChuckNorrisEntityModule,
+        DashboardModule,
         ChuckNorrisAppRoutingModule
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
