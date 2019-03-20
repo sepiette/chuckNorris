@@ -4,6 +4,7 @@
     <div class="joke-container">
         <div class="joke-card" *ngFor="let joke of jokes | async">
             <img src="{{joke.icon_url}}" alt="{{joke.icon_url}}"/>
+            <fa-icon class="heart" icon="heart"></fa-icon>
             <h5>
                 {{joke.value}}
             </h5>
