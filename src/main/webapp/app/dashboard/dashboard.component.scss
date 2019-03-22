@@ -1,27 +1,11 @@
-.joke-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    //justify-content: space-around;
-}
-
-.joke-card {
-    border-radius: 2px;
-    box-shadow: 5px 10px 5px #ccc;
-    margin: 20px;
+.joke-generator {
+    margin-left: 30px;
     padding: 5px;
-    flex: 0 1 25%;
+    background-color: #3e8acc;
+    color: white;
+    border-radius: 3px;
 
-    img {
-        padding-left: 15px;
-    }
-
-    h5 {
-        padding: 15px;
-    }
-
-    .heart:hover {
-        color: hotpink;
+    &:hover {
+        background-color: royalblue;
     }
 }

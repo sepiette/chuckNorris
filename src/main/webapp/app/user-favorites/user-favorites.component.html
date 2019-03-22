@@ -1,0 +1,12 @@
+<ng-container>
+    <h2>My Favorite Jokes</h2>
+    <hr/>
+    <div class="joke-container">
+        <div class="joke-card" *ngFor="let joke of favoriteJokes | async">
+            <!--<img src="{{joke.icon_url}}" alt="{{joke.icon_url}}"/>-->
+            <h5>
+                {{joke.jokeText}}
+            </h5>
+        </div>
+    </div>
+</ng-container>

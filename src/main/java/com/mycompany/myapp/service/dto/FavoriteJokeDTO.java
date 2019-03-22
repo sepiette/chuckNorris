@@ -1,15 +1,15 @@
 package com.mycompany.myapp.service.dto;
 
 public class FavoriteJokeDTO {
-    private Long userId;
+    private String userEmail;
     private String jokeId;
     private String jokeText;
 
     public FavoriteJokeDTO() {
     }
 
-    public Long getUserId() {
-        return userId;
+    public String getUserEmail() {
+        return userEmail;
     }
 
     public String getJokeId() {
@@ -20,8 +20,8 @@ public class FavoriteJokeDTO {
         return jokeText;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
     public void setJokeId(String jokeId) {

@@ -22,4 +22,8 @@ export class DashboardComponent implements OnInit {
         this.jokeService.loadJokes();
         console.log('COMPONENT JOKES: ', this.jokes);
     }
+
+    favoriteJoke(joke: Joke) {
+        this.jokeService.favoriteJoke(joke);
+    }
 }

@@ -224,3 +224,31 @@ ui bootstrap tweaks
 }
 
 /* jhipster-needle-scss-add-main JHipster will add new css style */
+
+.joke-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-around;
+}
+
+.joke-card {
+    border-radius: 2px;
+    box-shadow: 5px 10px 5px #ccc;
+    margin: 20px;
+    padding: 5px;
+    flex: 0 1 25%;
+
+    img {
+        padding-left: 15px;
+    }
+
+    h5 {
+        padding: 15px;
+    }
+
+    .heart:hover {
+        color: hotpink;
+    }
+}

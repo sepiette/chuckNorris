@@ -11,7 +11,7 @@
             <column name="joke_id" type="varchar(255)">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="user_id" type="bigint" />
+            <column name="user_email" type="varchar(255)" />
             <column name="joke_text" type="varchar(4096)"/>
         </createTable>
     </changeSet>

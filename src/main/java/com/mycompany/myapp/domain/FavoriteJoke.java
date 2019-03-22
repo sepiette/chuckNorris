@@ -13,8 +13,8 @@ public class FavoriteJoke {
     @Column(name = "joke_id")
     private String jokeId;
 
-    @Column(name = "user_id")
-    private Long userId;
+    @Column(name = "user_email")
+    private String userEmail;
 
     @Column(name = "joke_text")
     private String jokeText;
@@ -22,9 +22,9 @@ public class FavoriteJoke {
     public FavoriteJoke() {
     }
 
-    public FavoriteJoke(String jokeId, String jokeText, Long userId) {
+    public FavoriteJoke(String jokeId, String jokeText, String userEmail) {
         this.jokeId = jokeId;
-        this.userId = userId;
+        this.userEmail = userEmail;
         this.jokeText = jokeText;
     }
 
@@ -32,8 +32,8 @@ public class FavoriteJoke {
         return jokeId;
     }
 
-    public Long getUserId() {
-        return userId;
+    public String getUserEmail() {
+        return userEmail;
     }
 
     public String getJokeText() {
@@ -44,7 +44,7 @@ public class FavoriteJoke {
     public String toString() {
         return "FavoriteJoke{" +
             "jokeId='" + jokeId + '\'' +
-            ", userId=" + userId +
+            ", userEmail=" + userEmail +
             ", jokeText='" + jokeText + '\'' +
             '}';
     }

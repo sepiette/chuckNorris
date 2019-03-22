@@ -1,14 +1,14 @@
 <ng-container>
     <h2>Joke Dashboard</h2>
     <hr/>
+    <button class="joke-generator" (click)="generateJokeList()"> Generate New Jokes</button>
     <div class="joke-container">
         <div class="joke-card" *ngFor="let joke of jokes | async">
             <img src="{{joke.icon_url}}" alt="{{joke.icon_url}}"/>
-            <fa-icon class="heart" icon="heart"></fa-icon>
+            <fa-icon class="heart" icon="heart" (click)="favoriteJoke(joke)"></fa-icon>
             <h5>
                 {{joke.value}}
             </h5>
         </div>
     </div>
-    <button (click)="generateJokeList()"> Generate New Jokes</button>
 </ng-container>

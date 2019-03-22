@@ -17,8 +17,9 @@ import { ChuckNorrisAppRoutingModule } from './app-routing.module';
 import { ChuckNorrisHomeModule } from './jhipster-home/home.module';
 import { ChuckNorrisAccountModule } from './account/account.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { UserFavoritesModule } from './user-favorites/user-favorites.module';
+
 import * as moment from 'moment';
-// jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ErrorComponent } from './layouts';
 
 @NgModule({
@@ -35,6 +36,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
         ChuckNorrisHomeModule,
         ChuckNorrisAccountModule,
         DashboardModule,
+        UserFavoritesModule,
         ChuckNorrisAppRoutingModule
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, FooterComponent],
